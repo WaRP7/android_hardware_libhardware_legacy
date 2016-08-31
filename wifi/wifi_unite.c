@@ -523,9 +523,6 @@ int wifi_insmod_driver_realtek()
 }
 int wifi_insmod_driver_bcm()
 {
-    if (insmod(DRIVER_SDIO_IF_MODULE_PATH_BCM, DRIVER_SDIO_IF_MODULE_ARG) < 0)
-        return -1;
-
     if (insmod(DRIVER_MODULE_PATH_BCM, DRIVER_MODULE_ARG_BCM) < 0)
         return -1;
     return 0;
